@@ -1,0 +1,103 @@
+{
+	"name": "vue-webpack-plugin-component-template",
+	"version": "0.0.1",
+	"description": "tbd",
+	"private": false,
+	"main": "src/index.js",
+	"scripts": {
+		"dev": "pnpm development",
+		"development": "cross-env NODE_ENV=development webpack serve --config ./build/webpack.dev.config.js",
+		"build:release": "cross-env NODE_ENV=production webpack --config ./build/webpack.release.config.js --progress",
+		"build": "pnpm build:release"
+	},
+	"author": "WebDevNerdStuff & Bunnies... lots and lots of bunnies! <webdevnerdstuff@gmail.com> (https://webdevnerdstuff.com)",
+	"funding": [
+		{
+			"type": "patreon",
+			"url": "https://www.patreon.com/WebDevNerdStuff"
+		}
+	],
+	"license": "MIT",
+	"files": [
+		"dist/*",
+		"src/index.js",
+		"src/components/HelloWorld.vue",
+		"types/*",
+		"LICENSE.md",
+		"README.md",
+		"CHANGELOG.md"
+	],
+	"repository": "https://github.com/webdevnerdstuff/vue-webpack-plugin-component-template",
+	"bugs": {
+		"url": "https://github.com/webdevnerdstuff/vue-webpack-plugin-component-template/issues"
+	},
+	"homepage": "https://webdevnerdstuff.github.io/vue-webpack-plugin-component-template/",
+	"keywords": [
+		"vue-webpack-plugin-component-template",
+		"api",
+		"vue",
+		"vue2",
+		"component",
+		"javascript",
+		"webdevnerdstuff",
+		"wdns"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.18.0",
+		"@babel/eslint-parser": "^7.17.0",
+		"@babel/eslint-plugin": "^7.17.7",
+		"@babel/plugin-proposal-optional-chaining": "^7.17.12",
+		"@babel/plugin-transform-runtime": "^7.18.0",
+		"@babel/preset-env": "^7.18.0",
+		"@babel/runtime": "^7.18.0",
+		"@vue/eslint-config-prettier": "^7.0.0",
+		"babel-loader": "^8.2.5",
+		"babel-plugin-module-resolver": "^4.1.0",
+		"clean-webpack-plugin": "^4.0.0",
+		"cross-env": "^7.0.3",
+		"css-loader": "^6.7.1",
+		"eslint": "^8.16.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-import-resolver-alias": "^1.1.2",
+		"eslint-import-resolver-babel-module": "^5.3.1",
+		"eslint-import-resolver-custom-alias": "^1.3.0",
+		"eslint-import-resolver-webpack": "^0.13.2",
+		"eslint-plugin-babel": "^5.3.1",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-vue": "^9.0.1",
+		"eslint-webpack-plugin": "^3.1.1",
+		"file-loader": "^6.2.0",
+		"html-webpack-plugin": "^5.5.0",
+		"postcss": "^8.4.14",
+		"postcss-html": "^1.4.1",
+		"postcss-import": "^14.1.0",
+		"postcss-scss": "^4.0.4",
+		"prettier": "^2.6.2",
+		"prism-themes": "github:PrismJS/prism-themes",
+		"sass": "~1.32.13",
+		"sass-loader": "^12.6.0",
+		"style-loader": "^3.3.1",
+		"stylelint": "^14.8.3",
+		"stylelint-config-standard": "^25.0.0",
+		"stylelint-order": "^5.0.0",
+		"stylelint-scss": "^4.2.0",
+		"stylelint-webpack-plugin": "^3.3.0",
+		"svg-inline-loader": "^0.8.2",
+		"terser-webpack-plugin": "^5.3.1",
+		"vue": "^2.6.14",
+		"vue-code-highlight": "^0.7.8",
+		"vue-hot-reload-api": "^2.3.4",
+		"vue-loader": "^15.9.8",
+		"vue-style-loader": "^4.1.3",
+		"vue-template-compiler": "^2.6.14",
+		"webpack": "^5.72.1",
+		"webpack-bundle-analyzer": "^4.5.0",
+		"webpack-cli": "^4.9.2",
+		"webpack-dev-server": "^4.9.0",
+		"webpack-merge": "^5.8.0"
+	},
+	"peerDependencies": {
+		"vue": "^2.6.14"
+	}
+}
