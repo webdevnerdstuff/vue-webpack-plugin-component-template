@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<img alt="Vue logo" src="./assets/logo.png" />
+		<img alt="Vue logo" src="./assets/vue-logo.png" />
 		<HelloWorld msg="Hello Vue 2 + Webpack" />
 	</div>
 </template>
@@ -12,6 +12,10 @@ export default {
 	name: 'App',
 	components: {
 		HelloWorld,
+	},
+	mounted() {
+		this.$helloWorld();
+		this.$helloWorld({ msg: 'Hello World Plugin in Component' });
 	},
 };
 </script>

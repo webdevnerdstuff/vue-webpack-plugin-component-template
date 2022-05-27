@@ -104,12 +104,13 @@ const svgRule = {
  */
 const cleanOptions = {
 	root: publicDir,
-	dry: isDev,
-	verbose: isDev,
+	dry: false,
+	verbose: false,
 	cleanOnceBeforeBuildPatterns: [
 		'**/*.js',
 		'**/*.html',
 		'**/*.json',
+		'**/*.png',
 		'!images/favicon.ico',
 	],
 };
