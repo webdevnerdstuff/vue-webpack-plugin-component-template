@@ -6,8 +6,8 @@
 	"main": "src/index.js",
 	"scripts": {
 		"dev": "pnpm development",
-		"development": "cross-env NODE_ENV=development webpack serve --config ./build/webpack.dev.config.js",
-		"build:release": "cross-env NODE_ENV=production webpack --config ./build/webpack.release.config.js --progress",
+		"development": "webpack serve --node-env=development --config ./build/webpack.dev.config.js",
+		"build:release": "webpack --node-env=production --config ./build/webpack.release.config.js",
 		"build": "pnpm build:release"
 	},
 	"author": "WebDevNerdStuff & Bunnies... lots and lots of bunnies! <webdevnerdstuff@gmail.com> (https://webdevnerdstuff.com)",
@@ -54,7 +54,6 @@
 		"babel-loader": "^8.2.5",
 		"babel-plugin-module-resolver": "^4.1.0",
 		"clean-webpack-plugin": "^4.0.0",
-		"cross-env": "^7.0.3",
 		"css-loader": "^6.7.1",
 		"eslint": "^8.16.0",
 		"eslint-config-airbnb-base": "^15.0.0",
