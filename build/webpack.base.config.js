@@ -195,8 +195,10 @@ module.exports = {
 	resolve: {
 		extensions: ['.js', '.vue'],
 		alias: {
+			'@': path.join(__dirname, '/src'),
 			'@components': path.join(__dirname, '/src/components'),
-			'@documentation': path.join(__dirname, '/src/pages/documentation'),
+			'@pages': path.join(__dirname, '/src/pages'),
+			'@plugins': path.join(__dirname, '/src/plugins'),
 		},
 	},
 	module: {
